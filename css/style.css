@@ -1,0 +1,564 @@
+:root {
+  --gris-fuerte: #222;
+  --gris-fuerte2: #1E2022;
+  --gris20: #202225;
+  --gris-claro: #36393F;
+  --morado: #5865F2;
+  --rojo: #F25858;
+  --width-menu: 50px;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fondo gris */
+.fondo {
+  width: 100%;
+  height: 100%;
+  background-color: var(--gris-fuerte);
+}
+
+.fondo-claro {
+  width: 100%;
+  height: 100%;
+  background-color: var(--gris-claro);
+}
+
+/* Página de registro */
+.registro {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.registro-chico {
+  margin: 0 auto;
+  min-width: 30em;
+  width: 30%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+  .registro img, .registro-chico img {
+    max-width: 150px;
+  }
+
+  .registro h2, .registro h3, .registro a,
+  .registro-chico h2, .registro-chico h3, .registro-chico a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+/* Contenedor del formulario */
+.div-formulario {
+  background-color: var(--gris-claro);
+  width: 100%;
+  padding: 2em;
+  border-radius: 2px;
+}
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+}
+
+  .formulario label {
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .formulario input[type="text"], select {
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    padding: 0.5em;
+  }
+
+.registro-sect {
+  min-width: 255px;
+  flex: 255px;
+  margin: 0.5em;
+}
+
+  .registro-sect > div.la {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    justify-content: center;
+  }
+
+.departamento-rol {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+
+  .departamento-rol input[type="text"].depa {
+    background-color: var(--gris-fuerte);
+    max-width: 112px;
+    max-height: 45px;
+    border: 1px solid #000;
+  }
+
+  .departamento-rol input[type="text"] {
+    background-color: var(--gris-fuerte);
+    border: 1px solid #000;
+  }
+
+/* Botón default */
+.btn {
+  width: 100%;
+  max-height: 45px;
+  padding: 1em;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+
+/* Botón morado */
+.btn-morado {
+  background-color: var(--morado);
+  color: #ffF;
+}
+
+/* Botón rojo */
+.btn-rojo {
+  background-color: var(--rojo);
+  color: #ffF;
+}
+
+/* Grupo de botones */
+.btn-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+/* Menú */
+nav {
+  position: fixed;
+  width: 80px;
+  height: 100%;
+  background-color: var(--gris-fuerte);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+  nav ul li {
+    list-style: none;
+    color: #fff;
+  }
+
+    nav ul li img {
+      width: 100%;
+    }
+
+/* Páginas de balance */
+.balance {
+  margin: 0 auto;
+  width: 85%;
+  padding: 1em;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+  .balance h4 {
+    margin-bottom: 0.5em;
+  }
+
+.div-balance, .div-aportacion, .div-movimientos {
+  margin-bottom: 1em;
+}
+
+.tablas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+  .tablas table {
+    table-layout: fixed;
+    border-radius: 15px;
+    background-color: var(--gris-fuerte);
+    padding: 1em;
+    width: 100%;
+  }
+
+    .tablas table tr td:nth-child(1) {
+      text-align: start;
+    }
+
+    .tablas table tr td:nth-child(2) {
+      text-align: end;
+    }
+
+.detalle-ingreso {
+  margin: 0 auto;
+  width: 85%;
+  padding: 1em;
+  text-align: center;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  font-size: 36px;
+}
+
+  .detalle-ingreso .detalle-titulo {
+    grid-column: 1/3;
+  }
+
+.tablas table tr td:nth-child(2) {
+  text-align: end;
+}
+
+.detalle-ingreso div:nth-child(2) {
+  text-align: end;
+}
+
+.detalle-ingreso div:nth-child(3) {
+  text-align: start;
+}
+
+/* Contenedor para centrar todo */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-der {
+  color: #fff;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+.egreso {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+  .egreso p:nth-child(1) {
+    grid-column: 1/3;
+  }
+
+  .egreso p {
+    text-align: center;
+  }
+
+.comprobantes {
+  max-width: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.comprobante {
+  background-color: var(--gris-fuerte2);
+  border-radius: 15px;
+  text-align: center;
+  padding: 1em;
+}
+
+.bloque .img-bloque img {
+  max-width: 200px;
+}
+
+.bloques {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bloque p:nth-child(1) {
+  font-size: 15px;
+  margin-bottom: 0.5em;
+}
+
+.egreso-comite {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  row-gap: 1em;
+}
+
+/* Página de trámites */
+.container-tramites {
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  width: 85%;
+  height: 90%;
+}
+
+  .container-tramites table {
+    background-color: var(--gris-fuerte2);
+    border-radius: 15px;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+/* Trámites admin */
+.div-tramites {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+}
+
+  .div-tramites p {
+    grid-column: 1/3;
+    margin-top: 0.5em;
+  }
+
+/* Página de consultar trámite */
+.div-consultar {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+}
+
+  .div-consultar h1 {
+    font-size: 68px;
+  }
+
+  .div-consultar p {
+    font-size: 34px;
+  }
+
+.img-consultar {
+  margin-bottom: 2em;
+  max-height: 500px;
+  width: 100%;
+}
+
+  .img-consultar img {
+    max-height: 600px;
+  }
+
+/* Página editar trámite */
+.div-editar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.editar-tramite {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5em;
+  align-items: start;
+  text-align: start;
+  font-size: 25px;
+}
+
+  .editar-tramite input[type="text"] {
+    padding: 0.5em;
+    width: 500px;
+    max-width: 600px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .editar-tramite select {
+    padding: 0.5em;
+    width: 500px;
+    max-width: 600px;
+    border-radius: 5px;
+    border: none;
+  }
+
+.text-documento {
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+  margin-bottom: 0.3em;
+  font-size: 25px;
+}
+
+  .text-documento button {
+    justify-self: end;
+  }
+
+.img-consultar textarea {
+  width: 100%;
+  max-width: 100%;
+  max-height: 350px;
+  min-width: 100%;
+  padding: 1em;
+}
+
+/* Página consulta hilo */
+.div-hilo {
+  background-color: var(--gris20);
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 20px;
+  padding: 2em;
+}
+
+  .div-hilo div:nth-child(odd) {
+    background-color: #000;
+    justify-self: start;
+  }
+
+  .div-hilo div:nth-child(even) {
+    background-color: #272626;
+    justify-self: end;
+  }
+
+  .div-hilo div {
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+/* Página introductoria */
+.mizhouse {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 35px 5em;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  justify-items: center;
+  height: auto;
+}
+
+.miz-morado {
+  background-color: var(--morado);
+  height: 100vh;
+}
+
+.miz-gris {
+  background-color: var(--gris-fuerte);
+}
+
+.chats-container {
+  margin-left: 80px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 0.5em;
+}
+
+.chats-conversaciones {
+  background-color: var(--gris-claro);
+  margin-bottom: 0.5em;
+  border-radius: 0 0 15px 15px;
+  height: 100vh;
+}
+
+.conversaciones-head {
+  padding: 0.5em;
+  align-items: center;
+  border-bottom: 2px solid var(--gris-fuerte2);
+}
+
+  .conversaciones-head input {
+    padding: 0.5em;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--gris-fuerte2);
+    width: 100%;
+    height: 30px;
+    border: none;
+  }
+
+.conversaciones-content {
+  height: auto;
+  padding: 1em;
+  color: #fff;
+}
+
+  .conversaciones-content li {
+    list-style: none;
+    margin-bottom: 0.5em;
+  }
+
+.chats-conversacion {
+  background-color: var(--gris-claro);
+  margin-bottom: 0.5em;
+  border-radius: 0 0 15px 15px;
+  height: 100vh;
+}
+
+.conversacion-head {
+  padding: 0.5em;
+  border-bottom: 2px solid var(--gris-fuerte2);
+}
+
+  .conversacion-head p {
+    font-size: 25px;
+    color: #fff;
+  }
+
+.conversacion-content {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 1fr auto;
+}
+
+.conversacion-msg {
+  color: #fff;
+}
+
+.conversacion-input {
+  margin-top: 10px;
+  padding: 0.5em 2em;
+  background-color: var(--gris-claro);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+.conversacion-input input {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--gris-fuerte2);
+  border: none;
+}
+
+.btn-chat {
+  border-radius: 50%;
+  width: 100%;
+  border: none;
+}
+
+.a_balance {
+    text-decoration: none;
+    color: #fff;
+}
+
+.a_balance:hover {
+    text-decoration: underline;
+}
+
+.enlace_blanco a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.enlace_blanco a:hover {
+  text-decoration: underline;
+}

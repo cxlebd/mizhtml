@@ -1,0 +1,16 @@
+:root {
+    --gris-fuerte: #222;
+    --gris-fuerte2: #1E2022;
+    --gris20: #202225;
+    --gris-claro: #36393F;    
+    --morado: #5865F2;
+    --rojo: #F25858;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-size: cover;
+}
