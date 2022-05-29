@@ -4,78 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solicitudes  Administrador</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Solicitudes Administrador</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
 </head>
-<body class="fondo-claro">
+<body class="claro">
     <!-- Menú -->
-    <nav>
-    <ul>
-        <li>
-            <a href="index.aspx"><img src="./img/gato_sin_fondo.png" alt=""></a>
-        </li>
-        <li>
-            <a href="chat_residente_administrador.html"><img src="./img/residente.png" alt=""></a><!--chat administracion-->
-        </li>
-        <li>
-            <a href="chat_comite_administrador.html"><img src="./img/comite.png" alt=""></a><!--chat residente-->
-        </li>
-        <li>
-            <a href="balance_administrador.aspx"><img src="./img/balance.png" alt="" /></a>
-        </li>
-        <li>
-            <a href="tramites_administrador.aspx"><img src="./img/tramites.png" alt=""></a>
-        </li>
-        <li>
-            <a href="base_incidencias_administrador.aspx"><img src="./img/incidencias.png" alt=""></a>
-        </li>
-        <li>
-            <a href="subir_edo_cuenta.aspx"><img src="./img/estado cuenta.png" alt=""></a>
-        </li>
-       <!--quite base solicitudes admin porque es la actual-->
-        <li>
-            <a href="miembros_unidad_administrador.aspx"><img src="./img/cargadatos.png" alt=""></a>
-        </li>
-        <li>
-            <a href="editar_cuenta_administrador.aspx"><img src="./img/perfil.png" alt=""></a>
-        </li>
-    </ul>
-</nav> 
-
-    <!-- Cuerpo -->
-    <div class="container">
-        <div class="container-tramites">
-            <div class="btn-group">
-                <h1>Solicitudes</h1>
-                <a href="crear_solicitud.html"><button class="btn btn-morado">Generar solicitud</button></a>
+    <div class="sticky">
+        <div class="menu-container">
+            <div class="menu">
+                <ul>
+                    <a href="">
+                        <img class="menu-logo" src="./img/logo_contorno.png" alt="">
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="./img/tramites.png" alt="">
+                            <p>Trámites</p>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="./img/incidencias.png" alt="">
+                            <p>Incidencias</p>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="./img/estado cuenta.png" alt="">
+                            <p>Estado de cuenta</p>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="./img/solicitudes.png" alt="">
+                            <p>Solicitudes</p>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            <img src="./img/cargadatos.png" alt="">
+                            <p>Cargar datos</p>
+                        </li>
+                    </a>
+                </ul>
+                <a href="">
+                    <div class="menu-perfil">
+                        <img src="./img/perfil.png" alt="">
+                        <p>Perfil</p>
+                    </div>
+                </a>
             </div>
-            <br>
-            <p>Haga click en la solicitud para ver los detalles</p>
-            <br>
-            <table>
-                <thead>
-                <th>Solicitud</th>
-                <th>Descripcion</th>
-                <th>Estado</th>
-                </thead>
-                <tbody>
-                    <tr>
-
-                        <!-- detalle solicitud en el tr -->
-                        <td>No. Solicitud</td>
-                        <td>XXXXXXXXXX</td>
-                        <td>Aceptado/Declinado/Pendiente</td>
-                    </tr>
-                    <tr>
-
-                        <!-- detalle solicitud en el tr -->
-                        <td><a href="editar_solicitud_admin.html" class="a_balance">asd</a></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-
-                </tbody>
-            </table>
+            <div class="menu-hr"></div>
+        </div>
+    </div>
+    <!-- Fin menú --> 
+    <div class="solicitudes-container">        
+        <div class="solicitudes-header">
+            <h2>Solicitudes</h2>
+            <h3>Haga click en la solicitud para ver los detalles</h3>
+        </div>
+        <table class="solicitudes-table">
+            <thead>
+                <tr>
+                    <th>Incidencia</th>
+                    <th>Descripción</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>No. Incidencia</td>
+                    <td>Lorem</td>
+                    <td>
+                        <div class="btn-table btn-aceptado">
+                            Abierto
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>No. Incidencia</td>
+                    <td>Lorem</td>
+                    <td>
+                        <div class="btn-table btn-declinado">
+                            Cerrado
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>No. Incidencia</td>
+                    <td>Lorem</td>
+                    <td>
+                        <div class="btn-table btn-aceptado">
+                            Abierto
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>No. Incidencia</td>
+                    <td>Lorem</td>
+                    <td>
+                        <div class="btn-table btn-declinado">
+                            Cerrado
+                        </div>
+                    </td>
+                </tr>                   
+                <tr>
+                    <td>No. Incidencia</td>
+                    <td>Lorem</td>
+                    <td>
+                        <div class="btn-table btn-aceptado">
+                            Abierto
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>No. Incidencia</td>
+                    <td>Lorem</td>
+                    <td>
+                        <div class="btn-table btn-declinado">
+                            Cerrado
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="solicitudes-admin">
+            <div class="btn btn-fant">Generar solicitud</div>
         </div>
     </div>
 </body>

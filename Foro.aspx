@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Foro.aspx.cs" Inherits="Mizhouse.Presentacion.Foro" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Foro.aspx.cs" Inherits="Mizhouse.Presentacion.Foro" %>
 
 <!DOCTYPE html>
 
